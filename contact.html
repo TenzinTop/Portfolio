@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Contact</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style.css')}}">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+</head>
+<body>
+    <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+        <a class="navbar-brand" href="#">PORTFOLIO</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarCollapse">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item active">
+              <a class="nav-link" href="/">Home <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/about" target="_blank">Work</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#" target="_blank">Contact Us</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/blogs" target="_blank">Blogs</a>
+            </li>
+          </ul>
+        </div>
+    </nav>
+    <div class="bg-dark md-1">
+        <main role="main" class="inner cover bg-dark">
+            <h1 class="leads">Contact Page</h1>
+            <p class="leads">
+                Tenzin Topgyal<br>
+                Email: zintengyaltop67@gmail.com, zintengyaltop67@icloud.com<br>
+                Phone# +917338333417, +918861064349<br>
+                Current Address: #3, krishnappa building<br>
+                Viveknagar Post, Bengaluru, Karnataka <br>
+                560047<br>
+                Permanent Address: #21 U village,<br>
+                Dhoendeling Tibetan Settlement<br>
+                Kollegal, Chamrajnagar,560147<br>
+            </p>
+            
+        </main>
+
+        <div class="align-self-center" id="but1">
+          <button id="btn1" type="button" class="btn btn-primary bg-light shadow-lg"><a href="/comment">Private Queries</a></button>
+        </div>
+        
+        <footer class="mastfoot mt-auto bg-dark" id="page">
+            <div class="inner">
+            <img src="data:image/png;base64,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" height="25px" width="25px"><a href="https://www.instagram.com/topgyalzz/">Follow me @topgyalzz</a></img>
+            </div>
+        </footer>
+
+        
+    </div>
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+</body>
+</html>
+        
